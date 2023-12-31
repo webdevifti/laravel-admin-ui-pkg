@@ -8,10 +8,24 @@ Then
 ```
 php artisan ui bootstrap --auth
 ```
-That's It .
+Migrate the tables 
+
+```
+php artisan migrate
+```
+command
+
 Now You can install my package with this command
 ```
 composer require webdevifti/admindash
+```
+publish the vendor with this command
+```
+php artisan vendor:publish
+```
+Thend select the vendor which name is 
+```
+Webdevifti\Admindash\AdminDashServiceProvider
 ```
 Now time to make some changes on some files 
 
@@ -31,10 +45,12 @@ public function index(){
 	return view('vendor.admindash.admin.index');
 }
 ```
-On this `vendor/admindash/auth` directory  you can see some folder and files. Replace this files and folder with `views/auth` folder's files. Now delete `vendor/admindash/auth` directory.
-
 You can **delete** these file and directory now
+`auth/`
 `views/home.blade.php `
 `views/layouts/`
+
+On  `vendor/admindash/auth` directory cut the auth folder and paste on `views/` this direcotry
+
 
 Thank You.

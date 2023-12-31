@@ -1,0 +1,26 @@
+{
+    "name": "webdevifti/admindash",
+    "description": "A Laravel package for admin dashboard views",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Webdevifti\\Admindash\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webdevifti\\Admindash\\AdminDashServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Eftekhar Alam",
+            "email": "eftialam@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
